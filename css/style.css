@@ -1,0 +1,190 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    backdrop-filter: blur(10px);
+}
+.bg-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(15px);
+}
+.content {
+    display: flex;
+    position:inherit
+}
+.left-side {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.sign-up {
+   margin-top: 50px;
+   margin-left: 100px;
+   font-weight: 100;
+   color: white;
+}
+.links {
+    position: absolute;
+    font-size: 14px;
+    left: 60px;
+    bottom: 30px;
+    line-height: 1.5em;
+    color: aliceblue;
+}
+.links * {
+    color: aliceblue;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+.close-btn {
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 30px;
+    color: rgba(190, 190, 190, 0.8);
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-top: 105px;
+    gap:40px;
+}
+.forms > .one-input {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 35px;
+}
+.one-input > label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 0.8);
+}
+.one-input > input {
+    border: none;
+    border-bottom: 1px solid rgba(190, 190, 190, 0.6);
+    outline: none;
+    font-size: 16px;
+}
+.form-actions {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.get {
+    background-color: #0156D9;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: inherit;
+}
+.signin {
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+span {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media (max-width:900px) {
+.right-side {
+height: 100%;
+width: 100%;
+justify-content: center;
+}
+}
+/*  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    backdrop-filter: blur(10px);
+/*
+}
+
+/*  
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    backdrop-filter: blur(20px);
+
+.content {
+    display: flex;
+    width: 1400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content > .left-side {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+body > 
+.sign-up {
+    margin-left: 25px;
+    color: white;
+}
+.links * {
+    color: paleturquoise;
+}
+.link * {
+    margin-bottom: 500px;
+    margin-left: 100px;
+}
+}*/
