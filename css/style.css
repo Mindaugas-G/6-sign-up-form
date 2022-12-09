@@ -42,21 +42,27 @@ body {
     width: var(--w);
 }
 .sign-up {
-   margin-top: 50px;
-   margin-left: 100px;
-   font-weight: 100;
+   margin-top: 45px;
+   margin-left: 80px;
+   font-weight: lighter;
    color: white;
+   font-family: system-ui;
+   font-size: 50px;
 }
 .links {
     position: absolute;
     font-size: 14px;
-    left: 60px;
+    left: 70px;
     bottom: 30px;
     line-height: 1.5em;
     color: aliceblue;
+    border-bottom: none;
 }
 .links * {
     color: aliceblue;
+}
+.links>.link {
+    text-decoration: underline 1px rgb(180, 86, 180); 
 }
 .right-side {
     display: flex;
@@ -79,7 +85,7 @@ body {
     flex-direction: column;
     width: 400px;
     padding-top: 105px;
-    gap:40px;
+    gap:60px;
 }
 .one-input {
     display: flex;
