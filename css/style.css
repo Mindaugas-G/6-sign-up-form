@@ -33,12 +33,13 @@ body {
 }
 .left-side {
     position: relative;
-    width: 400px;
+    --w: 400px;
     height: 600px;
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
+    width: var(--w);
 }
 .sign-up {
    margin-top: 50px;
@@ -62,8 +63,9 @@ body {
     flex-direction: column;
     background-color: white;
     align-items: center;
-    width: 600px;
+    --w: 600px;
     height: 700px;
+    width: var(--w);
 }
 .close-btn {
     top: 0;
@@ -132,15 +134,16 @@ span {
     }
 .left-side {
     height: 200px;
-    width: 100%;
+    --w: 100%;
     
 }
     .right-side {
-    
-    width: 100%;
+    --w: 100%;
+
 }   
 .one-input {
-    width: 80%;
+    
+    --w: 80%;
 }
 .forms {
 align-items: center;
